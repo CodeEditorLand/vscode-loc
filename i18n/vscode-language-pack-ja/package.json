@@ -1,4 +1,17 @@
 {
+  "name": "vscode-language-pack-ja",
+  "displayName": "Japanese Language Pack for Visual Studio Code",
+  "version": "1.88.0",
+  "description": "Language pack extension for Japanese",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Microsoft/vscode-loc"
+  },
+  "license": "SEE MIT LICENSE IN LICENSE.md",
+  "publisher": "MS-CEINTL",
+  "scripts": {
+    "update": "cd ../vscode && npm run update-localization-extension ja"
+  },
   "contributes": {
     "localizations": [
       {
@@ -362,18 +375,5 @@
       }
     ]
   },
-  "description": "Language pack extension for Japanese",
-  "displayName": "Japanese Language Pack for Visual Studio Code",
-  "icon": "languagepack.png",
-  "license": "SEE MIT LICENSE IN LICENSE.md",
-  "name": "vscode-language-pack-ja",
-  "publisher": "MS-CEINTL",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Microsoft/vscode-loc"
-  },
-  "scripts": {
-    "update": "cd ../vscode && npm run update-localization-extension ja"
-  },
-  "version": "1.88.0"
+  "icon": "languagepack.png"
 }
