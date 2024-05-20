@@ -2,11 +2,23 @@
 	"name": "vscode-language-pack-it",
 	"displayName": "Italian Language Pack for Visual Studio Code",
 	"description": "Language pack extension for Italian",
-	"scripts": {
-		"Document": "Document 'Source/**/*.ts'",
-		"prepublishOnly": "Build 'Source/**/*.ts'",
-		"update": "cd ../vscode && npm run update-localization-extension it"
+	"version": "1.90.0",
+	"publisher": "MS-CEINTL",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/vscode-loc"
 	},
+	"license": "SEE MIT LICENSE IN LICENSE.md",
+	"engines": {
+		"vscode": "^1.90.0"
+	},
+	"icon": "languagepack.png",
+	"categories": [
+		"Language Packs"
+	],
+	"keywords": [
+		"italiano"
+	],
 	"contributes": {
 		"localizations": [
 			{
@@ -370,8 +382,7 @@
 			}
 		]
 	},
-	"devDependencies": {
-		"@playform/build": "0.0.7"
-	},
-	"icon": "languagepack.png"
+	"scripts": {
+		"update": "cd ../vscode && npm run update-localization-extension it"
+	}
 }
