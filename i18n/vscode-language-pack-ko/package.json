@@ -1,24 +1,4 @@
 {
-	"name": "vscode-language-pack-ko",
-	"displayName": "Korean Language Pack for Visual Studio Code",
-	"description": "Language pack extension for Korean",
-	"version": "1.90.0",
-	"publisher": "MS-CEINTL",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-loc"
-	},
-	"license": "SEE MIT LICENSE IN LICENSE.md",
-	"engines": {
-		"vscode": "^1.90.0"
-	},
-	"icon": "languagepack.png",
-	"categories": [
-		"Language Packs"
-	],
-	"keywords": [
-		"한국어"
-	],
 	"contributes": {
 		"localizations": [
 			{
@@ -382,6 +362,10 @@
 			}
 		]
 	},
+	"description": "Language pack extension for Korean",
+	"displayName": "Korean Language Pack for Visual Studio Code",
+	"icon": "languagepack.png",
+	"name": "vscode-language-pack-ko",
 	"scripts": {
 		"update": "cd ../vscode && npm run update-localization-extension ko"
 	}
