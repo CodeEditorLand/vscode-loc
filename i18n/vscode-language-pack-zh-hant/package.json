@@ -2,9 +2,23 @@
 	"name": "vscode-language-pack-zh-hant",
 	"displayName": "Chinese (Traditional) Language Pack for Visual Studio Code",
 	"description": "Language pack extension for Chinese (Traditional)",
-	"scripts": {
-		"update": "cd ../vscode && npm run update-localization-extension zh-hant"
+	"version": "1.90.0",
+	"publisher": "MS-CEINTL",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/vscode-loc"
 	},
+	"license": "SEE MIT LICENSE IN LICENSE.md",
+	"engines": {
+		"vscode": "^1.90.0"
+	},
+	"icon": "languagepack.png",
+	"categories": [
+		"Language Packs"
+	],
+	"keywords": [
+		"中文(繁體)"
+	],
 	"contributes": {
 		"localizations": [
 			{
@@ -368,5 +382,7 @@
 			}
 		]
 	},
-	"icon": "languagepack.png"
+	"scripts": {
+		"update": "cd ../vscode && npm run update-localization-extension zh-hant"
+	}
 }
