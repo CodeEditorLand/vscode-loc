@@ -2,23 +2,9 @@
 	"name": "vscode-language-pack-ru",
 	"displayName": "Russian Language Pack for Visual Studio Code",
 	"description": "Language pack extension for Russian",
-	"version": "1.91.0",
-	"publisher": "MS-CEINTL",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-loc"
+	"scripts": {
+		"update": "cd ../vscode && npm run update-localization-extension ru"
 	},
-	"license": "SEE MIT LICENSE IN LICENSE.md",
-	"engines": {
-		"vscode": "^1.91.0"
-	},
-	"icon": "languagepack.png",
-	"categories": [
-		"Language Packs"
-	],
-	"keywords": [
-		"русский"
-	],
 	"contributes": {
 		"localizations": [
 			{
@@ -382,7 +368,5 @@
 			}
 		]
 	},
-	"scripts": {
-		"update": "cd ../vscode && npm run update-localization-extension ru"
-	}
+	"icon": "languagepack.png"
 }
