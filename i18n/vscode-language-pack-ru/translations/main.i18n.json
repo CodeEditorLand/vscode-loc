@@ -1268,7 +1268,9 @@
 			"location.kb": "Символ {0} из {1}, {2} для следующего"
 		},
 		"vs/editor/contrib/hover/browser/contentHoverRendered": {
-			"hoverAccessibilityStatusBar": "This is a hover status bar."
+			"hoverAccessibilityStatusBar": "This is a hover status bar.",
+			"hoverAccessibilityStatusBarActionWithKeybinding": "It has an action with label {0} and keybinding {1}.",
+			"hoverAccessibilityStatusBarActionWithoutKeybinding": "It has an action with label {0}."
 		},
 		"vs/editor/contrib/hover/browser/hoverAccessibleViews": {
 			"decreaseVerbosity": "- Уровень детализации отсортированной при наведении части можно уменьшить с помощью команды \"Уменьшить уровень детализации при наведении\" <keybinding:{0}>.",
@@ -5629,6 +5631,7 @@
 		},
 		"vs/workbench/contrib/codeEditor/browser/emptyTextEditorHint/emptyTextEditorHint": {
 			"defaultHintAriaLabel": "Выполните {0} для выбора языка, выполните {1} для заполнения шаблона или выполните {2} для открытия другого редактора и начала работы Начните вводить текст, чтобы закрыть.",
+			"disableEditorEmptyHint": "Disable Empty Editor Hint",
 			"disableHint": " Переключите {0} в параметрах, чтобы отключить это указание.",
 			"emptyHintText": "Нажмите {0}, чтобы попросить {1} что-нибудь сделать. ",
 			"emptyHintTextDismiss": "Начните вводить текст, чтобы закрыть.",
@@ -8082,7 +8085,7 @@
 			"mode": "Настройте, применяются ли изменения, созданные с помощью встроенного чата, непосредственно к документу или предварительно просматриваются.",
 			"mode.live": "Изменения применяются непосредственно к документу, могут быть выделены с помощью встроенных различий и приняты или отброшены с помощью фрагментов. При завершении сеанса изменения сохраняются.",
 			"mode.preview": "Изменения отображаются только в режиме предварительного просмотра и должны быть приняты с помощью кнопки \"Применить\". При завершении сеанса изменения будут отменены.",
-			"txtButtons": "Следует ли использовать текстовые кнопки (Требуется перезапуск)."
+			"txtButtons": "Whether to use textual buttons."
 		},
 		"vs/workbench/contrib/inlineChat/electron-sandbox/inlineChatActions": {
 			"holdForSpeech": "Удерживайте для использования речи"
@@ -11291,8 +11294,8 @@
 			"ScopedEnvironmentContributionInfo": "рабочая область",
 			"extensionEnvironmentContributionInfoActive": "Следующие расширения внесли вклад в среду этого терминала.",
 			"extensionEnvironmentContributionInfoStale": "Следующие расширения хотят перезапустить терминал, чтобы внести вклад в его среду.",
-			"relaunchTerminalLabel": "Перезапустить терминал",
-			"showEnvironmentContributions": "Показать вклад среды"
+			"relaunchTerminalLabel": "Relaunch Terminal",
+			"showEnvironmentContributions": "Show Environment Contributions"
 		},
 		"vs/workbench/contrib/terminal/browser/terminal.contribution": {
 			"miToggleIntegratedTerminal": "&&Терминал",
