@@ -1,10 +1,4 @@
 {
-	"name": "vscode-language-pack-cs",
-	"displayName": "Czech Language Pack for Visual Studio Code",
-	"description": "Language pack extension for Czech",
-	"scripts": {
-		"update": "cd ../vscode && npm run update-localization-extension cs"
-	},
 	"contributes": {
 		"localizations": [
 			{
@@ -368,5 +362,11 @@
 			}
 		]
 	},
-	"icon": "languagepack.png"
+	"description": "Language pack extension for Czech",
+	"displayName": "Czech Language Pack for Visual Studio Code",
+	"icon": "languagepack.png",
+	"name": "vscode-language-pack-cs",
+	"scripts": {
+		"update": "cd ../vscode && npm run update-localization-extension cs"
+	}
 }
