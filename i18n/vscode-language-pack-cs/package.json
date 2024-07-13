@@ -2,9 +2,23 @@
 	"name": "vscode-language-pack-cs",
 	"displayName": "Czech Language Pack for Visual Studio Code",
 	"description": "Language pack extension for Czech",
-	"scripts": {
-		"update": "cd ../vscode && npm run update-localization-extension cs"
+	"version": "1.91.0",
+	"publisher": "MS-CEINTL",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/vscode-loc"
 	},
+	"license": "SEE MIT LICENSE IN LICENSE.md",
+	"engines": {
+		"vscode": "^1.91.0"
+	},
+	"icon": "languagepack.png",
+	"categories": [
+		"Language Packs"
+	],
+	"keywords": [
+		"čeština"
+	],
 	"contributes": {
 		"localizations": [
 			{
@@ -368,5 +382,7 @@
 			}
 		]
 	},
-	"icon": "languagepack.png"
+	"scripts": {
+		"update": "cd ../vscode && npm run update-localization-extension cs"
+	}
 }
