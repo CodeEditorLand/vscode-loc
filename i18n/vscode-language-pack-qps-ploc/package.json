@@ -1,10 +1,4 @@
 {
-	"name": "vscode-language-pack-qps-ploc",
-	"displayName": "Pseudo Language Language Pack",
-	"description": "Language pack extension for Pseudo Language",
-	"scripts": {
-		"update": "cd ../../../vscode && yarn run update-localization-extension qps-ploc"
-	},
 	"contributes": {
 		"localizations": [
 			{
@@ -368,5 +362,11 @@
 			}
 		]
 	},
-	"icon": "languagepack.png"
+	"description": "Language pack extension for Pseudo Language",
+	"displayName": "Pseudo Language Language Pack",
+	"icon": "languagepack.png",
+	"name": "vscode-language-pack-qps-ploc",
+	"scripts": {
+		"update": "cd ../../../vscode && yarn run update-localization-extension qps-ploc"
+	}
 }
