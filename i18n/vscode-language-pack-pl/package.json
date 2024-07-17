@@ -2,23 +2,6 @@
 	"name": "vscode-language-pack-pl",
 	"displayName": "Polish Language Pack for Visual Studio Code",
 	"description": "Language pack extension for Polish",
-	"version": "1.92.0",
-	"publisher": "MS-CEINTL",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-loc"
-	},
-	"license": "SEE MIT LICENSE IN LICENSE.md",
-	"engines": {
-		"vscode": "^1.92.0"
-	},
-	"icon": "languagepack.png",
-	"categories": [
-		"Language Packs"
-	],
-	"keywords": [
-		"polski"
-	],
 	"contributes": {
 		"localizations": [
 			{

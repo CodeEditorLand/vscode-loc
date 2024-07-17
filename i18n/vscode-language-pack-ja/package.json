@@ -2,23 +2,6 @@
 	"name": "vscode-language-pack-ja",
 	"displayName": "Japanese Language Pack for Visual Studio Code",
 	"description": "Language pack extension for Japanese",
-	"version": "1.92.0",
-	"publisher": "MS-CEINTL",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-loc"
-	},
-	"license": "SEE MIT LICENSE IN LICENSE.md",
-	"engines": {
-		"vscode": "^1.92.0"
-	},
-	"icon": "languagepack.png",
-	"categories": [
-		"Language Packs"
-	],
-	"keywords": [
-		"日本語"
-	],
 	"contributes": {
 		"localizations": [
 			{
