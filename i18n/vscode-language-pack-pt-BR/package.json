@@ -1,24 +1,4 @@
 {
-	"name": "vscode-language-pack-pt-BR",
-	"displayName": "Portuguese (Brazil) Language Pack for Visual Studio Code",
-	"description": "Language pack extension for Portuguese (Brazil)",
-	"version": "1.92.0",
-	"publisher": "MS-CEINTL",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-loc"
-	},
-	"license": "SEE MIT LICENSE IN LICENSE.md",
-	"engines": {
-		"vscode": "^1.92.0"
-	},
-	"icon": "languagepack.png",
-	"categories": [
-		"Language Packs"
-	],
-	"keywords": [
-		"português"
-	],
 	"contributes": {
 		"localizations": [
 			{
@@ -382,6 +362,10 @@
 			}
 		]
 	},
+	"description": "Language pack extension for Portuguese (Brazil)",
+	"displayName": "Portuguese (Brazil) Language Pack for Visual Studio Code",
+	"icon": "languagepack.png",
+	"name": "vscode-language-pack-pt-BR",
 	"scripts": {
 		"update": "cd ../vscode && npm run update-localization-extension pt_BR"
 	}
