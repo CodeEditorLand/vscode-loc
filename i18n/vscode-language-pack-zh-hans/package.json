@@ -1,4 +1,7 @@
 {
+	"name": "vscode-language-pack-zh-hans",
+	"displayName": "Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code",
+	"description": "Language pack extension for Chinese (Simplified)",
 	"contributes": {
 		"localizations": [
 			{
@@ -362,11 +365,5 @@
 			}
 		]
 	},
-	"description": "Language pack extension for Chinese (Simplified)",
-	"displayName": "Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code",
-	"icon": "languagepack.png",
-	"name": "vscode-language-pack-zh-hans",
-	"scripts": {
-		"update": "cd ../vscode && npm run update-localization-extension zh-hans"
-	}
+	"icon": "languagepack.png"
 }

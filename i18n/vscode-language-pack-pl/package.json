@@ -1,4 +1,7 @@
 {
+	"name": "vscode-language-pack-pl",
+	"displayName": "Polish Language Pack for Visual Studio Code",
+	"description": "Language pack extension for Polish",
 	"contributes": {
 		"localizations": [
 			{
@@ -362,11 +365,5 @@
 			}
 		]
 	},
-	"description": "Language pack extension for Polish",
-	"displayName": "Polish Language Pack for Visual Studio Code",
-	"icon": "languagepack.png",
-	"name": "vscode-language-pack-pl",
-	"scripts": {
-		"update": "cd ../vscode && npm run update-localization-extension pl"
-	}
+	"icon": "languagepack.png"
 }
