@@ -6,7 +6,7 @@
 
 Adds localization for Pseudo Language to VS Code. Pseudo Language is a language used to test unicode character support in applications.
 
-## Usage
+## 🛠️ Usage
 
 You can override the default UI language by explicitly setting the VS Code display language using the **Configure Display Language** command.
 

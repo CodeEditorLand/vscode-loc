@@ -55,7 +55,7 @@
 
 Russian Language Pack provides localized UI experience for VS Code.
 
-## Usage
+## 🛠️ Usage
 
 You can override the default UI language by explicitly setting the VS Code display language using the **Configure Display Language** command.
 
