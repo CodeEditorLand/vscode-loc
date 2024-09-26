@@ -74,7 +74,7 @@
 			"filter": "Filtr",
 			"foundResults": "{0} results",
 			"fuzzySearch": "Dopasowanie rozmyte",
-			"not found": "Nie znaleziono elementów.",
+			"not found": "No results found.",
 			"replFindNoResults": "Brak wyników",
 			"type to filter": "Wpisz, aby filtrować",
 			"type to search": "Wpisz, aby wyszukać"
@@ -316,6 +316,7 @@
 			"editor.experimental.asyncTokenization": "Określa, czy tokenizacja ma być wykonywana asynchronicznie w internetowym procesie roboczym.",
 			"editor.experimental.asyncTokenizationLogging": "Określa, czy tokenizacja asynchronicznych ma być rejestrowana. Tylko do debugowania.",
 			"editor.experimental.asyncTokenizationVerification": "Określa, czy tokenizacja asynchroniczna ma być weryfikowana względem starszej tokenizacji w tle. Może to spowolnić tokenizację. Tylko na potrzeby debugowania.",
+			"editor.experimental.preferTreeSitter": "Controls whether tree sitter parsing should be turned on for specific languages. This will take precedence over `editor.experimental.treeSitterTelemetry` for the specified languages.",
 			"editor.experimental.treeSitterTelemetry": "Określa, czy analizowanie generatora tree sitter powinno być włączone i zbierane pod kątem telemetrii. Ustawienie „editor.experimental.preferTreeSitter” dla określonych języków będzie miało pierwszeństwo.",
 			"editorConfigurationTitle": "Edytor",
 			"hideUnchangedRegions.contextLineCount": "Określa, ile wierszy jest używanych jako kontekst podczas porównywania niezmienionych regionów.",
@@ -2110,7 +2111,8 @@
 			"invalidManifest": "Nieprawidłowy pakiet VSIX: plik package.json nie jest plikiem JSON."
 		},
 		"vs/platform/extensions/common/extensionValidator": {
-			"apiProposalMismatch": "This extension is using the API proposal '{0}' that is not compatible with the current version of VS Code.",
+			"apiProposalMismatch1": "This extension is using the API proposal '{0}' that is not compatible with the current version of VS Code.",
+			"apiProposalMismatch2": "This extension is using the API proposals {0} and '{1}' that are not compatible with the current version of VS Code.",
 			"extensionDescription.activationEvents1": "właściwość „{0}” może zostać pominięta lub musi być typu „string[]”",
 			"extensionDescription.activationEvents2": "Właściwość `{0}` powinna zostać pominięta, jeśli rozszerzenie nie ma właściwości `{1}` lub `{2}`.",
 			"extensionDescription.browser1": "właściwość „{0}” może zostać pominięta lub musi być typu „string”",
@@ -5385,7 +5387,7 @@
 			"chat.clear.label": "Wyczyść wszystkie czaty w obszarze roboczym",
 			"chat.history.label": "Pokaż czaty...",
 			"chat.history.rename": "Zmień nazwę",
-			"chatWith": "Chat With Extension",
+			"chatWith": "Chat with Extension",
 			"currentChatLabel": "bieżące",
 			"interactiveSession.clearHistory.label": "Wyczyść historię wprowadzania",
 			"interactiveSession.focusInput.label": "Fokus — dane wejściowe czatu",
@@ -5569,7 +5571,8 @@
 			"chatEditing.stopSession": "Stop Editing Session",
 			"discard.allFiles": "Discard All",
 			"discard.file": "Discard",
-			"multiDiffEditorInput.name": "Suggested Edits"
+			"multiDiffEditorInput.name": "Suggested Edits",
+			"open.file": "Open File"
 		},
 		"vs/workbench/contrib/chat/browser/chatEditorInput": {
 			"chatEditorLabelIcon": "Ikona etykiety edytora czatu.",
@@ -5698,7 +5701,6 @@
 			"chatResponseFiltered": "Ma wartość true, gdy odpowiedź czatu została odfiltrowana przez serwer.",
 			"chatResponseSupportsIssueReporting": "Wartość true, gdy bieżąca odpowiedź czatu obsługuje raportowanie problemów.",
 			"chatSessionResponseDetectedAgentOrCommand": "Gdy agent lub polecenie zostało wykryte automatycznie",
-			"chatVoteUpEnabled": "Wartość true, gdy jest włączona akcja głosowania na czacie.",
 			"inChat": "Wartość True, gdy fokus znajduje się w widżecie czatu. W przeciwnym razie ma wartość false.",
 			"inInteractiveInput": "Wartość true, gdy fokus znajduje się w danych wejściowych czatu. W przeciwnym razie wartość false.",
 			"inQuickChat": "Ma wartość True (Prawda), gdy interfejs użytkownika szybkiego czatu ma fokus, w przeciwnym razie ma wartość False (Fałsz).",
@@ -5753,7 +5755,6 @@
 			"voiceChatInProgress": "Trwa sesja zamiany mowy na tekst dla czatu."
 		},
 		"vs/workbench/contrib/chat/electron-sandbox/actions/voiceChatActions": {
-			"installProviderForSynthesis.justification": "Wsparcie dla prelegentów wymaga tego rozszerzenia.",
 			"installProviderForVoiceChat.justification": "Obsługa mikrofonu wymaga tego rozszerzenia.",
 			"keywordActivation.status.active": "Trwa nasłuchiwanie frazy „Hej Code”...",
 			"keywordActivation.status.inactive": "Trwa oczekiwanie na zakończenie czatu głosowego...",
@@ -5770,7 +5771,6 @@
 			"voice.keywordActivation.quickChat": "Aktywacja słów kluczowych jest włączona i nasłuchuje frazy „Hey Code”, aby rozpocząć sesję czatu głosowego na szybkim czacie.",
 			"workbench.action.chat.holdToVoiceChatInChatView.label": "Przytrzymaj na czacie głosowym w widoku czatu",
 			"workbench.action.chat.inlineVoiceChat": "Śródwierszowy czat usługi Voice",
-			"workbench.action.chat.installProviderForSynthesis.label": "Czytaj na głos",
 			"workbench.action.chat.installProviderForVoiceChat.label": "Rozpocznij Czat usługi Voice",
 			"workbench.action.chat.quickVoiceChat.label": "Szybki czat usługi Voice",
 			"workbench.action.chat.readChatResponseAloud": "Czytaj na głos",
@@ -7131,11 +7131,6 @@
 		"vs/workbench/contrib/extensions/browser/configBasedRecommendations": {
 			"exeBasedRecommendation": "To rozszerzenie jest zalecane z powodu bieżącej konfiguracji obszaru roboczego"
 		},
-		"vs/workbench/contrib/extensions/browser/deprecatedExtensionsChecker": {
-			"deprecated extensions": "Masz zainstalowane przestarzałe rozszerzenia. Zalecamy ich przejrzenie i migrację do alternatywnych rozwiązań.",
-			"neverShowAgain": "Nie pokazuj ponownie",
-			"showDeprecated": "Pokaż przestarzałe rozszerzenia"
-		},
 		"vs/workbench/contrib/extensions/browser/exeBasedRecommendations": {
 			"exeBasedRecommendation": "To rozszerzenie jest zalecane, ponieważ zainstalowano {0}."
 		},
@@ -7578,6 +7573,7 @@
 			"deprecated": "Przestarzały",
 			"disabled": "Wyłączone",
 			"disabledExtensions": "Wyłączone",
+			"dismiss": "Dismiss",
 			"enabled": "Włączone",
 			"enabledExtensions": "Włączone",
 			"extensionFound": "Znaleziono 1 rozszerzenie.",
@@ -8306,7 +8302,7 @@
 			"moveToNextHunk": "Przejdź do następnej zmiany",
 			"moveToPreviousHunk": "Przejdź do poprzedniej zmiany",
 			"rerun": "Uruchom ponownie",
-			"run": "Editor Chat",
+			"run": "Editor Inline Chat",
 			"showChanges": "Przełącz zmiany",
 			"startInlineChat": "Ikona, która duplikuje czat wbudowany z paska narzędzi edytora.",
 			"unstash": "Wznowienie ostatniego odrzuconego czatu w tekście",

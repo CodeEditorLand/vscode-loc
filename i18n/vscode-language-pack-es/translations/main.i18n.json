@@ -74,7 +74,7 @@
 			"filter": "Filtrar",
 			"foundResults": "{0} results",
 			"fuzzySearch": "Coincidencia aproximada",
-			"not found": "No se encontraron elementos.",
+			"not found": "No results found.",
 			"replFindNoResults": "No hay resultados",
 			"type to filter": "Escriba texto para filtrar",
 			"type to search": "Escriba texto para buscar"
@@ -316,6 +316,7 @@
 			"editor.experimental.asyncTokenization": "Controla si la tokenización debe producirse de forma asincrónica en un rol de trabajo.",
 			"editor.experimental.asyncTokenizationLogging": "Controla si se debe registrar la tokenización asincrónica. Solo para depuración.",
 			"editor.experimental.asyncTokenizationVerification": "Controla si se debe comprobar la tokenización asincrónica con la tokenización en segundo plano heredada. Puede ralentizar la tokenización. Solo para depuración.",
+			"editor.experimental.preferTreeSitter": "Controls whether tree sitter parsing should be turned on for specific languages. This will take precedence over `editor.experimental.treeSitterTelemetry` for the specified languages.",
 			"editor.experimental.treeSitterTelemetry": "Controla si se debe activar el análisis del establecedor de árbol y recopilar telemetría. Tendrá prioridad establecer \"editor.experimental.preferTreeSitter\" para idiomas específicos.",
 			"editorConfigurationTitle": "Editor",
 			"hideUnchangedRegions.contextLineCount": "Controla cuántas líneas se usan como contexto al comparar regiones sin cambios.",
@@ -2110,7 +2111,8 @@
 			"invalidManifest": "VSIX no válido: package.json no es un archivo JSON."
 		},
 		"vs/platform/extensions/common/extensionValidator": {
-			"apiProposalMismatch": "This extension is using the API proposal '{0}' that is not compatible with the current version of VS Code.",
+			"apiProposalMismatch1": "This extension is using the API proposal '{0}' that is not compatible with the current version of VS Code.",
+			"apiProposalMismatch2": "This extension is using the API proposals {0} and '{1}' that are not compatible with the current version of VS Code.",
 			"extensionDescription.activationEvents1": "la propiedad `{0}` se puede omitir o debe ser de tipo `string[]`",
 			"extensionDescription.activationEvents2": "la propiedad '{0}' debe omitirse si la extensión no tiene una propiedad '{1}' o '{2}'.",
 			"extensionDescription.browser1": "la propiedad `{0}` se puede omitir o debe ser de tipo `string`",
@@ -5385,7 +5387,7 @@
 			"chat.clear.label": "Borrar todos los chats del área de trabajo",
 			"chat.history.label": "Mostrar chats...",
 			"chat.history.rename": "Cambiar nombre",
-			"chatWith": "Chat With Extension",
+			"chatWith": "Chat with Extension",
 			"currentChatLabel": "actual",
 			"interactiveSession.clearHistory.label": "Borrar el historial de entradas",
 			"interactiveSession.focusInput.label": "Enfocar entrada de chat",
@@ -5417,10 +5419,10 @@
 			"chatContext.notebook.kernelVariable": "Kernel Variable...",
 			"chatContext.notebook.selectkernelVariable": "Select and Insert Kernel Variable",
 			"chatContext.symbol": "Símbolo...",
-			"imageFromClipboard": "Image from Clipboard",
-			"pastedImage": "Pasted Image",
+			"imageFromClipboard": "Imagen del Portapapeles",
+			"pastedImage": "Imagen pegada",
 			"workbench.action.chat.attachContext.label": "Adjuntar contexto",
-			"workbench.action.chat.attachFile.label": "Add File to Chat",
+			"workbench.action.chat.attachFile.label": "Agregar archivo al chat",
 			"workbench.action.chat.attachSelection.label": "Agregar selección al chat"
 		},
 		"vs/workbench/contrib/chat/browser/actions/chatCopyActions": {
@@ -5463,7 +5465,7 @@
 		},
 		"vs/workbench/contrib/chat/browser/actions/chatTitleActions": {
 			"chat.remove.label": "Quitar solicitud y respuesta",
-			"chat.retry.label": "Retry",
+			"chat.retry.label": "Reintentar",
 			"interactive.helpful.label": "Útil",
 			"interactive.insertIntoNotebook.label": "Insertar en Notebook",
 			"interactive.reportIssueForBug.label": "Notificar incidencia",
@@ -5485,7 +5487,7 @@
 		},
 		"vs/workbench/contrib/chat/browser/chat.contribution": {
 			"chat": "Chat",
-			"chat.commandCenter.enabled": "Controls whether the command center shows a menu for chat actions (requires {0}).",
+			"chat.commandCenter.enabled": "Controla si el centro de comandos muestra un menú para las acciones de chat (requiere {0}).",
 			"chat.experimental.detectParticipant.enabled": "Habilita la detección automática del participante del chat para el chat del panel.",
 			"chat.experimental.implicitContext": "Controla si se muestra una casilla para permitir al usuario determinar qué contexto implícito se incluye con el mensaje de un participante del chat.",
 			"chat.experimental.variables.editor": "Habilita variables para el chat del editor.",
@@ -5519,7 +5521,7 @@
 			"chat.attachment3": "Contexto adjunto: {0}.",
 			"chat.fileAttachment3": "Adjunto: {0}.",
 			"chat.fileAttachmentWithRange3": "Adjunto: {0}, línea {1} a línea {2}.",
-			"chat.imageAttachment": "Attached image, {0}",
+			"chat.imageAttachment": "Imagen adjunta, {0}",
 			"chat.omittedFileAttachment": "Omitido: {0}.",
 			"chat.omittedFileAttachmentWithRange": "Omitido: {0}, línea {1} a línea {2}.",
 			"chat.partialFileAttachment": "Parcialmente adjunto: {0}.",
@@ -5558,18 +5560,19 @@
 		"vs/workbench/contrib/chat/browser/chatDragAndDrop": {
 			"attach": "Attach",
 			"file": "File",
-			"image": "Image"
+			"image": "Imagen"
 		},
 		"vs/workbench/contrib/chat/browser/chatEditingService": {
 			"accept.allFiles": "Accept All",
-			"accept.file": "Accept",
+			"accept.file": "Aceptar",
 			"chatEditing.openDiffs": "Open Diffs",
 			"chatEditing.startSession": "Start Editing Session",
 			"chatEditing.startingSession": "Generating edits...",
 			"chatEditing.stopSession": "Stop Editing Session",
-			"discard.allFiles": "Discard All",
-			"discard.file": "Discard",
-			"multiDiffEditorInput.name": "Suggested Edits"
+			"discard.allFiles": "Descartar todo",
+			"discard.file": "Descartar",
+			"multiDiffEditorInput.name": "Suggested Edits",
+			"open.file": "Open File"
 		},
 		"vs/workbench/contrib/chat/browser/chatEditorInput": {
 			"chatEditorLabelIcon": "Icono de la etiqueta del editor de chats.",
@@ -5583,7 +5586,7 @@
 			"workbench.panel.chat.view.showGettingStarted": "When enabled, shows a getting started experiments in the chat panel."
 		},
 		"vs/workbench/contrib/chat/browser/chatImagePaste": {
-			"pastedImage": "Pasted Image"
+			"pastedImage": "Imagen pegada"
 		},
 		"vs/workbench/contrib/chat/browser/chatInlineAnchorWidget": {
 			"actions.attach.label": "Add File to Chat",
@@ -5597,10 +5600,10 @@
 			"chat.attachment": "Contexto adjunto, {0}",
 			"chat.fileAttachment": "Archivo adjunto, {0}",
 			"chat.fileAttachmentWithRange": "Archivo adjunto, {0}, línea {1} a la línea {2}",
-			"chat.imageAttachment": "Attached image, {0}",
+			"chat.imageAttachment": "Imagen adjunta, {0}",
 			"chat.submitToSecondaryAgent": "Enviar a @{0}",
-			"chatEditingSessionOverview": "{0} files changed",
-			"chatEditingSessionOverview.oneFileChanged": "1 file changed",
+			"chatEditingSessionOverview": "{0} archivos cambiados",
+			"chatEditingSessionOverview.oneFileChanged": "1 archivo cambiado",
 			"chatInput": "Entrada de chat",
 			"chatInput.accessibilityHelpNoKb": "Entrada de chat, escriba el código aquí y presione Entrar para ejecutarlo. Use el comando Ayuda de accesibilidad del chat para obtener más información.",
 			"notebook.moreExecuteActionsLabel": "Más..."
@@ -5687,8 +5690,8 @@
 			"chatEditApplied": "True cuando se han aplicado las ediciones de texto del chat.",
 			"chatExtensionInvalid": "True cuando la extensión de chat instalada no es válida y debe actualizarse.",
 			"chatIsEnabled": "True cuando el chat está habilitado porque se activa un participante de chat predeterminado con una implementación.",
-			"chatItemId": "The id of the chat item.",
-			"chatLastItemId": "The id of the last chat item.",
+			"chatItemId": "Id. del elemento de chat.",
+			"chatLastItemId": "Id. del último elemento de chat.",
 			"chatModelsAreUserSelectable": "True when the chat model can be selected manually by the user.",
 			"chatParticipantRegistered": "True cuando se registra un participante de chat predeterminado para el panel.",
 			"chatParticipantSupportsModelPicker": "True when the current chat participant supports picking the model manually.",
@@ -5698,7 +5701,6 @@
 			"chatResponseFiltered": "Es true cuando el servidor filtró la respuesta del chat.",
 			"chatResponseSupportsIssueReporting": "Es verdadero cuando la respuesta de chat actual admite informes de problemas.",
 			"chatSessionResponseDetectedAgentOrCommand": "Cuando se detectó automáticamente el agente o el comando",
-			"chatVoteUpEnabled": "Es True cuando la acción de votar a favor del chat está habilitada.",
 			"inChat": "es true cuando el foco está en el widget del chat; en caso contrario, es false.",
 			"inInteractiveInput": "es true cuando el foco está en la entrada del chat; en caso contrario, es false.",
 			"inQuickChat": "Es true cuando la interfaz de usuario de chat rápido tiene el foco; de lo contrario, es false.",
@@ -5736,7 +5738,7 @@
 		"vs/workbench/contrib/chat/common/tools/languageModelToolsContribution": {
 			"canBeInvokedManually": "Indica si el usuario puede invocar manualmente esta herramienta a través de la experiencia de usuario del chat.",
 			"condition": "Condición que debe ser verdadera para que esta herramienta esté habilitada. Tenga en cuenta que una herramienta aún puede ser invocada por otra extensión aunque su condición \"when\" sea false.",
-			"contentTypes": "The list of content types that this tool can return. It's required that tools support `text/plain`, and that is assumed even if not specified here. Another example could be the contentType exported by the `@vscode/prompt-tsx` library.",
+			"contentTypes": "Lista de tipos de contenido que esta herramienta puede devolver. Es necesario que las herramientas admitan \"text/plain\", y esto se supone incluso si no se especifica aquí. Otro ejemplo podría ser el contentType exportado por la biblioteca \"@vscode/prompt-tsx\".",
 			"icon": "Icono que representa esta herramienta. Una ruta de acceso de archivo, un objeto con rutas de acceso de archivo para temas oscuros y claros, o una referencia de icono de tema, como \"\\$(zap)\"",
 			"icon.dark": "Ruta de icono cuando se usa un tema oscuro",
 			"icon.light": "Ruta del icono cuando se usa un tema ligero",
@@ -5753,7 +5755,6 @@
 			"voiceChatInProgress": "Hay una sesión de conversión de voz en texto en curso para el chat."
 		},
 		"vs/workbench/contrib/chat/electron-sandbox/actions/voiceChatActions": {
-			"installProviderForSynthesis.justification": "La compatibilidad con hablantes requiere esta extensión.",
 			"installProviderForVoiceChat.justification": "El soporte con micrófonos requiere esta extensión.",
 			"keywordActivation.status.active": "Escuchando 'Hey Code'...",
 			"keywordActivation.status.inactive": "Esperando a que finalice el chat de voz...",
@@ -5770,7 +5771,6 @@
 			"voice.keywordActivation.quickChat": "La activación de palabras clave está habilitada y se reconoce \"Hey Code\" para iniciar una sesión de chat de voz en el chat rápido.",
 			"workbench.action.chat.holdToVoiceChatInChatView.label": "Mantener pulsado para el chat de voz en la vista de chat",
 			"workbench.action.chat.inlineVoiceChat": "Chat de voz insertado",
-			"workbench.action.chat.installProviderForSynthesis.label": "Lectura en voz alta",
 			"workbench.action.chat.installProviderForVoiceChat.label": "Iniciar chat de voz",
 			"workbench.action.chat.quickVoiceChat.label": "Chat de voz rápido",
 			"workbench.action.chat.readChatResponseAloud": "Lectura en voz alta",
@@ -7131,11 +7131,6 @@
 		"vs/workbench/contrib/extensions/browser/configBasedRecommendations": {
 			"exeBasedRecommendation": "Se recomienda esta extensión debido a la configuración actual del área de trabajo"
 		},
-		"vs/workbench/contrib/extensions/browser/deprecatedExtensionsChecker": {
-			"deprecated extensions": "Tiene extensiones en desuso instaladas. Le recomendamos que las revise y migre a alternativas.",
-			"neverShowAgain": "No volver a mostrar",
-			"showDeprecated": "Mostrar extensiones en desuso"
-		},
 		"vs/workbench/contrib/extensions/browser/exeBasedRecommendations": {
 			"exeBasedRecommendation": "Se recomienda esta extensión porque tiene instalado {0}."
 		},
@@ -7578,6 +7573,7 @@
 			"deprecated": "En desuso",
 			"disabled": "Deshabilitado",
 			"disabledExtensions": "Deshabilitado",
+			"dismiss": "Dismiss",
 			"enabled": "Habilitado",
 			"enabledExtensions": "Habilitado",
 			"extensionFound": "Se encontró 1 extensión.",
@@ -8306,7 +8302,7 @@
 			"moveToNextHunk": "Moverse al cambio siguiente",
 			"moveToPreviousHunk": "Moverse al cambio anterior",
 			"rerun": "Repetición",
-			"run": "Editor Chat",
+			"run": "Editor Inline Chat",
 			"showChanges": "Alternar cambios",
 			"startInlineChat": "Icono que genera el chat en línea desde la barra de herramientas del editor.",
 			"unstash": "Reanudar el último chat en línea descartado",
