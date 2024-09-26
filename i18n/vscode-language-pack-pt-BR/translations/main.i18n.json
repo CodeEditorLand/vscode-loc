@@ -316,7 +316,7 @@
 			"editor.experimental.asyncTokenization": "Controla se a geração de tokens deve ocorrer de forma assíncrona em uma função de trabalho.",
 			"editor.experimental.asyncTokenizationLogging": "Controla se a geração de tokens assíncronos deve ser registrada. Somente para depuração.",
 			"editor.experimental.asyncTokenizationVerification": "Controla se a tokenização assíncrona deve ser verificada em relação à tokenização em segundo plano herdada. Pode desacelerar a tokenização. Apenas para depuração.",
-			"editor.experimental.preferTreeSitter": "Controls whether tree sitter parsing should be turned on for specific languages. This will take precedence over `editor.experimental.treeSitterTelemetry` for the specified languages.",
+			"editor.experimental.preferTreeSitter": "Controla se a análise Tree Sitter deve ser ativada para idiomas específicos. Isso terá precedência sobre editor.experimental.treeSitterTelemetry para os idiomas especificados.",
 			"editor.experimental.treeSitterTelemetry": "Controla se a análise da árvore deve ser ativada e a telemetria coletada. A configuração de `editor.experimental.preferTreeSitter` para idiomas específicos terá precedência.",
 			"editorConfigurationTitle": "Editor",
 			"hideUnchangedRegions.contextLineCount": "Controla quantas linhas são usadas como contexto ao comparar regiões inalteradas.",
@@ -5387,7 +5387,7 @@
 			"chat.clear.label": "Limpar Todos os Chats do Workspace",
 			"chat.history.label": "Mostrar Chats...",
 			"chat.history.rename": "Renomear",
-			"chatWith": "Chat with Extension",
+			"chatWith": "Conversa com Extensão",
 			"currentChatLabel": "atual",
 			"interactiveSession.clearHistory.label": "Limpar Histórico de Entrada",
 			"interactiveSession.focusInput.label": "Foco na Entrada do Chat",
@@ -5395,6 +5395,7 @@
 			"interactiveSession.history.editor": "Abrir no Editor",
 			"interactiveSession.history.pick": "Alternar para o chat",
 			"interactiveSession.open": "Abrir Editor",
+			"more": "More...",
 			"newChatTitle": "Título do novo chat",
 			"openChat": "Abrir Chat",
 			"title4": "Chat"
@@ -5558,7 +5559,7 @@
 			"treeAriaLabel": "Árvore de Arquivos"
 		},
 		"vs/workbench/contrib/chat/browser/chatDragAndDrop": {
-			"attach": "Attach",
+			"attach as context": "Attach {0} as Context",
 			"file": "File",
 			"image": "Image"
 		},
@@ -5572,7 +5573,7 @@
 			"discard.allFiles": "Discard All",
 			"discard.file": "Discard",
 			"multiDiffEditorInput.name": "Suggested Edits",
-			"open.file": "Open File"
+			"open.file": "Abrir arquivo"
 		},
 		"vs/workbench/contrib/chat/browser/chatEditorInput": {
 			"chatEditorLabelIcon": "Ícone do rótulo do editor de chat.",
@@ -5606,7 +5607,8 @@
 			"chatEditingSessionOverview.oneFileChanged": "1 file changed",
 			"chatInput": "Entrada de Chat",
 			"chatInput.accessibilityHelpNoKb": "Entrada de bate-papo, digite o código aqui e pressione Enter para executar. Use o comando Chat Accessibility Help para obter mais informações.",
-			"notebook.moreExecuteActionsLabel": "Mais..."
+			"notebook.moreExecuteActionsLabel": "Mais...",
+			"remove": "Remove"
 		},
 		"vs/workbench/contrib/chat/browser/chatListRenderer": {
 			"chatConfirmationAction": "selecionado “{0}”",
@@ -8354,6 +8356,7 @@
 			"inlineChatEditing": "Se o usuário está atualmente editando ou gerando código no chat embutido",
 			"inlineChatEmpty": "Se a entrada do editor interativo está vazia",
 			"inlineChatFocused": "Se a entrada do editor interativo está focada",
+			"inlineChatHasPossible": "Whether a provider for inline chat exists and whether an editor for inline chat is open",
 			"inlineChatHasProvider": "Se existe um provedor para editores interativos",
 			"inlineChatHasStashedSession": "Se o editor interativo tiver mantido uma sessão para restauração rápida",
 			"inlineChatInnerCursorEnd": "Se o cursor da entrada do editor iterativo está no final da entrada",
