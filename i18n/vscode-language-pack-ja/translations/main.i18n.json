@@ -74,7 +74,7 @@
 			"filter": "フィルター",
 			"foundResults": "{0} 件の結果",
 			"fuzzySearch": "あいまい一致",
-			"not found": "結果が見つかりません。",
+			"not found": "No results found.",
 			"replFindNoResults": "結果はありません",
 			"type to filter": "入力してフィルター",
 			"type to search": "入力して検索"
@@ -2111,8 +2111,8 @@
 			"invalidManifest": "VSIX が無効です: package.json は JSON ファイルではありません。"
 		},
 		"vs/platform/extensions/common/extensionValidator": {
-			"apiProposalMismatch1": "この拡張機能は、現在のバージョンの VS Code と互換性のない API 提案 '{0}' を使用しています。",
-			"apiProposalMismatch2": "この拡張機能は、現在のバージョンの VS Code と互換性のない API 提案 {0} および '{1}' を使用しています。",
+			"apiProposalMismatch1": "This extension is using the API proposal '{0}' that is not compatible with the current version of VS Code.",
+			"apiProposalMismatch2": "This extension is using the API proposals {0} and '{1}' that are not compatible with the current version of VS Code.",
 			"extensionDescription.activationEvents1": "プロパティ `{0}` は省略するか、型 `string[]` にする必要があります",
 			"extensionDescription.activationEvents2": "プロパティ '{0}' は、拡張機能に '{1}' または '{2}' プロパティがない場合は省略する必要があります。",
 			"extensionDescription.browser1": "プロパティ `{0}` は省略するか、`string` 型にする必要があります",
@@ -5395,7 +5395,7 @@
 			"interactiveSession.history.editor": "エディターで開く",
 			"interactiveSession.history.pick": "チャットに切り替える",
 			"interactiveSession.open": "エディターを開く",
-			"more": "その他...",
+			"more": "More...",
 			"newChatTitle": "新しいチャットのタイトル",
 			"openChat": "チャットを開く",
 			"title4": "チャット"
@@ -5559,7 +5559,7 @@
 			"treeAriaLabel": "ファイル ツリー"
 		},
 		"vs/workbench/contrib/chat/browser/chatDragAndDrop": {
-			"attach as context": "{0} をコンテキストとしてアタッチする",
+			"attach as context": "Attach {0} as Context",
 			"file": "ファイル",
 			"image": "画像"
 		},
@@ -5608,7 +5608,7 @@
 			"chatInput": "チャット入力",
 			"chatInput.accessibilityHelpNoKb": "チャット入力、ここにコードを入力し、Enter キーを押して実行します。詳細については、Chat Accessibility Help コマンドを使用してください。",
 			"notebook.moreExecuteActionsLabel": "その他...",
-			"remove": "削除"
+			"remove": "Remove"
 		},
 		"vs/workbench/contrib/chat/browser/chatListRenderer": {
 			"chatConfirmationAction": "選択した \"{0}\"",
@@ -7575,7 +7575,7 @@
 			"deprecated": "非推奨",
 			"disabled": "無効",
 			"disabledExtensions": "無効",
-			"dismiss": "閉じる",
+			"dismiss": "Dismiss",
 			"enabled": "有効",
 			"enabledExtensions": "有効",
 			"extensionFound": "1 個の拡張機能が見つかりました。",
@@ -8304,7 +8304,7 @@
 			"moveToNextHunk": "次の変更箇所に移動",
 			"moveToPreviousHunk": "前の変更箇所に移動",
 			"rerun": "再実行",
-			"run": "エディター内でのインライン チャット",
+			"run": "Editor Inline Chat",
 			"showChanges": "変更の切り替え",
 			"startInlineChat": "エディター ツール バーからインライン チャットを生成するアイコン。",
 			"unstash": "最後に閉じられたインライン チャットの再開",
@@ -8356,7 +8356,7 @@
 			"inlineChatEditing": "ユーザーが現在インライン チャットでコードを編集しているか生成しているかどうか",
 			"inlineChatEmpty": "対話型エディター入力が空であるかどうか",
 			"inlineChatFocused": "対話型エディター入力がフォーカスされているかどうか",
-			"inlineChatHasPossible": "インライン チャットのプロバイダーが存在するかどうか、およびインライン チャットのエディターが開かれているかどうか",
+			"inlineChatHasPossible": "Whether a provider for inline chat exists and whether an editor for inline chat is open",
 			"inlineChatHasProvider": "対話型エディターのプロバイダーが存在するかどうか",
 			"inlineChatHasStashedSession": "対話型エディターがクイック復元のためにセッションを保持したかどうか",
 			"inlineChatInnerCursorEnd": "対話型エディター入力のカーソルが最終行にあるかどうか",
