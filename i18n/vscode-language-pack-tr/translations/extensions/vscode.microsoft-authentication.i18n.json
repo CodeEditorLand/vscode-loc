@@ -29,6 +29,9 @@
 		"package": {
 			"description": "Microsoft kimlik doğrulama sağlayıcısı",
 			"displayName": "Microsoft Hesabı",
+			"microsoft-authentication.implementation.description": "Bir Microsoft hesabıyla oturum açmak için kullanılacak kimlik doğrulaması uygulaması.",
+			"microsoft-authentication.implementation.enumDescriptions.classic": "Bir Microsoft hesabıyla oturum açmak için klasik kimlik doğrulaması akışını kullanın.",
+			"microsoft-authentication.implementation.enumDescriptions.msal": "Bir Microsoft hesabıyla oturum açmak için Microsoft Kimlik Doğrulama Kitaplığı’nı (MSAL) kullanın.",
 			"microsoft-sovereign-cloud.customEnvironment.activeDirectoryEndpointUrl.description": "Özel Bağımsız Bulut için Active Directory uç noktası.",
 			"microsoft-sovereign-cloud.customEnvironment.activeDirectoryResourceId.description": "Özel Bağımsız Bulut için Active Directory kaynak kimliği.",
 			"microsoft-sovereign-cloud.customEnvironment.description": "Bağımsız Bulut'un Microsoft Bağımsız Bulut kimlik doğrulama sağlayıcısıyla birlikte kullanacağı özel yapılandırma. Bu özelliği kullanmak için bununla birlikte `#microsoft-sovereign-cloud.environment#` ayarının da 'özel' olarak ayarlanması gereklidir.",
@@ -41,8 +44,7 @@
 			"microsoft-sovereign-cloud.environment.enumDescriptions.AzureUSGovernment": "Azure ABD Kamu",
 			"microsoft-sovereign-cloud.environment.enumDescriptions.custom": "Özel Microsoft Bağımsız Bulutu",
 			"signIn": "Oturum Aç",
-			"signOut": "Oturumu Kapat",
-			"useMsal.description": "Bir Microsoft hesabıyla oturum açmak için Microsoft Kimlik Doğrulama Kitaplığı’nı (MSAL) kullanın."
+			"signOut": "Oturumu Kapat"
 		}
 	}
 }
