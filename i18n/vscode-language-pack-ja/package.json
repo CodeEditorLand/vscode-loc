@@ -1,4 +1,10 @@
 {
+	"name": "@codeeditorland/language-pack-ja",
+	"displayName": "Japanese Language Pack for Visual Studio Code",
+	"description": "Language pack extension for Japanese",
+	"scripts": {
+		"update": "cd ../vscode && npm run update-localization-extension ja"
+	},
 	"contributes": {
 		"localizations": [
 			{
@@ -367,12 +373,6 @@
 		]
 	},
 	"dependencies": {},
-	"description": "Language pack extension for Japanese",
 	"devDependencies": {},
-	"displayName": "Japanese Language Pack for Visual Studio Code",
-	"icon": "languagepack.png",
-	"name": "@codeeditorland/language-pack-ja",
-	"scripts": {
-		"update": "cd ../vscode && npm run update-localization-extension ja"
-	}
+	"icon": "languagepack.png"
 }
