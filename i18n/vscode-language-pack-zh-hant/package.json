@@ -366,10 +366,12 @@
 			}
 		]
 	},
+	"dependencies": {},
 	"description": "Language pack extension for Chinese (Traditional)",
+	"devDependencies": {},
 	"displayName": "Chinese (Traditional) Language Pack for Visual Studio Code",
 	"icon": "languagepack.png",
-	"name": "vscode-language-pack-zh-hant",
+	"name": "@codeeditorland/language-pack-zh-hant",
 	"scripts": {
 		"update": "cd ../vscode && npm run update-localization-extension zh-hant"
 	}

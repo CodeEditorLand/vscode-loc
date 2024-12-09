@@ -366,10 +366,12 @@
 			}
 		]
 	},
+	"dependencies": {},
 	"description": "Language pack extension for Korean",
+	"devDependencies": {},
 	"displayName": "Korean Language Pack for Visual Studio Code",
 	"icon": "languagepack.png",
-	"name": "vscode-language-pack-ko",
+	"name": "@codeeditorland/language-pack-ko",
 	"scripts": {
 		"update": "cd ../vscode && npm run update-localization-extension ko"
 	}

@@ -1,4 +1,10 @@
 {
+	"name": "@codeeditorland/language-pack-fr",
+	"displayName": "French Language Pack for Visual Studio Code",
+	"description": "Language pack extension for French",
+	"scripts": {
+		"update": "cd ../vscode && npm run update-localization-extension fr"
+	},
 	"contributes": {
 		"localizations": [
 			{
@@ -366,11 +372,7 @@
 			}
 		]
 	},
-	"description": "Language pack extension for French",
-	"displayName": "French Language Pack for Visual Studio Code",
-	"icon": "languagepack.png",
-	"name": "vscode-language-pack-fr",
-	"scripts": {
-		"update": "cd ../vscode && npm run update-localization-extension fr"
-	}
+	"dependencies": {},
+	"devDependencies": {},
+	"icon": "languagepack.png"
 }
