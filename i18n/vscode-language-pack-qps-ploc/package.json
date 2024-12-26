@@ -2,9 +2,23 @@
 	"name": "@codeeditorland/language-pack-qps-ploc",
 	"displayName": "Pseudo Language Language Pack",
 	"description": "Language pack extension for Pseudo Language",
-	"scripts": {
-		"update": "cd ../../../vscode && yarn run update-localization-extension qps-ploc"
+	"version": "1.97.0",
+	"publisher": "MS-CEINTL",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/vscode-loc"
 	},
+	"license": "SEE MIT LICENSE IN LICENSE.md",
+	"engines": {
+		"vscode": "^1.97.0"
+	},
+	"icon": "languagepack.png",
+	"categories": [
+		"Language Packs"
+	],
+	"keywords": [
+		"Þƨèúδô £áñϱúáϱè"
+	],
 	"contributes": {
 		"localizations": [
 			{
